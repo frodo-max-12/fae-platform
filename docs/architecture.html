@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAE Platform — System Architecture</title>
+<style>
+  :root { --ink:#1e1b4b; --muted:#5b5f7a; --band:#312e81; --tint:#eef2ff; --tint2:#f5f3ff; --indigo:#4338ca; --indigo-soft:#e0e7ff; --coral:#e11d48; --mint:#0f766e; --line:#e5e7f2; --card:#fff; }
+  * { box-sizing:border-box; margin:0; }
+  body { font:14px/1.5 "Avenir Next","Helvetica Neue",Arial,sans-serif; color:var(--ink); background:#fff; padding-bottom:60px; }
+  header { background:var(--band); color:#fff; padding:26px 36px 22px; }
+  header h1 { font-size:28px; font-weight:700; } header h1 span { color:#fda4af; }
+  header p.sub { color:#c7d2fe; margin-top:6px; max-width:900px; }
+  .rule { margin-top:12px; max-width:760px; font-size:13px; background:#fff; color:var(--ink); border-radius:12px; padding:9px 14px; }
+  .rule b { color:var(--coral); }
+  main { max-width:1500px; margin:0 auto; padding:22px 36px; }
+  .layout { display:grid; grid-template-columns:minmax(0,1fr) 380px; gap:20px; align-items:start; }
+  @media (max-width:1100px) { .layout { grid-template-columns:1fr; } }
+  .lane { background:var(--tint); border-radius:18px; padding:16px 16px 14px; margin-bottom:14px; } .lane.eng { background:var(--tint2); }
+  .lanehead { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+  .lanehead h2 { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--indigo); }
+  .lanehead .sub { font-size:12px; color:var(--muted); }
+  .row { display:flex; flex-wrap:wrap; gap:10px; align-items:stretch; }
+  .stage { flex:1 1 150px; min-width:148px; background:var(--card); border-radius:14px; padding:12px 13px 10px; box-shadow:0 2px 10px rgba(49,46,129,.08); cursor:pointer; transition:all .15s; }
+  .stage:hover { box-shadow:0 6px 18px rgba(49,46,129,.16); transform:translateY(-1px); }
+  .stage.active { box-shadow:0 0 0 3px var(--indigo-soft), 0 6px 18px rgba(49,46,129,.16); }
+  .stage .num { width:26px; height:26px; border-radius:50%; border:2px solid var(--coral); color:var(--coral); font-weight:700; font-size:12px; display:flex; align-items:center; justify-content:center; margin-bottom:7px; }
+  .lane.eng .stage .num { border-color:var(--mint); color:var(--mint); border-radius:7px; font-size:10.5px; width:auto; padding:0 6px; }
+  .stage h3 { font-size:14px; font-weight:700; margin-bottom:3px; } .stage p { font-size:11.5px; color:var(--muted); }
+  .stage .mod { display:block; font-family:"SF Mono",Menlo,monospace; font-size:10px; color:var(--indigo); margin-top:6px; }
+  .chevron { align-self:center; color:#a5b4fc; font-size:24px; flex:0 0 auto; }
+  .panel { position:sticky; top:16px; border:1px solid var(--line); border-radius:14px; background:var(--card); padding:18px 20px; min-height:340px; border-top:5px solid var(--coral); }
+  .panel h2 { font-size:18px; color:var(--indigo); margin-bottom:2px; } .panel .role { font-size:12.5px; color:var(--muted); font-style:italic; margin-bottom:10px; }
+  .panel .mods { font-family:"SF Mono",Menlo,monospace; font-size:11px; background:var(--tint); border-radius:8px; padding:7px 10px; margin-bottom:12px; white-space:pre-line; }
+  .panel h4 { font-size:11px; text-transform:uppercase; letter-spacing:.09em; color:var(--muted); margin:12px 0 5px; }
+  .panel ul { padding-left:17px; } .panel li { font-size:12.8px; margin-bottom:5px; } .panel li::marker { color:var(--coral); }
+  .strips { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin-top:6px; }
+  .strip { border:1px solid var(--line); border-radius:14px; background:var(--card); padding:14px 18px; }
+  .strip h3 { font-size:12px; text-transform:uppercase; letter-spacing:.09em; color:var(--muted); margin-bottom:8px; } .strip li { font-size:13px; margin:4px 0 0 16px; } .strip li::marker { color:var(--coral); }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; } .chip { font-size:11.5px; padding:3px 9px; border-radius:20px; background:var(--indigo-soft); color:var(--indigo); font-weight:600; }
+  footer { text-align:center; color:var(--muted); font-size:12px; margin-top:22px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>FAE <span>Platform</span></h1>
+  <p class="sub">From a customer's RFQ email to a technical proposal in minutes. Click any box for detail.</p>
+  <div class="rule"><b>The catalog-first rule.</b> Pre-built JSON catalogs answer first. The LLM ranks and explains; the code verifies every spec. Live dealer sites are fetched only when a catalog is missing.</div>
+</header>
+<main><div class="layout"><div>
+<div class="lane"><div class="lanehead"><h2>The wizard</h2><span class="sub">what the engineer walks through</span></div><div class="row">
+  <div class="stage" data-k="intake"><div class="num">1</div><h3>Email intake</h3><p>OAuth, Gmail fetch, attachments, or paste</p><span class="mod">api/gmail</span></div><div class="chevron">›</div>
+  <div class="stage" data-k="extract"><div class="num">2</div><h3>Extraction</h3><p>Two passes, 11+ formats, structured JSON</p><span class="mod">api/extract</span></div><div class="chevron">›</div>
+  <div class="stage" data-k="match"><div class="num">3</div><h3>Matching</h3><p>Catalog-first, five tiers, five candidates</p><span class="mod">api/products</span></div><div class="chevron">›</div>
+  <div class="stage" data-k="compare"><div class="num">4</div><h3>Compare + draft</h3><p>Parametric table, six verdicts, proposal email</p><span class="mod">api/compare · api/draft</span></div><div class="chevron">›</div>
+  <div class="stage" data-k="send"><div class="num">5</div><h3>Review + send</h3><p>Edit, send via Gmail, audit trail, resume</p><span class="mod">api/gmail/send</span></div>
+</div></div>
+<div class="lane eng"><div class="lanehead"><h2>Under the hood</h2><span class="sub">what every step leans on</span></div><div class="row">
+  <div class="stage" data-k="catalog"><div class="num">CAT</div><h3>Catalog engine</h3><p>59 catalogs, refresh scripts, live fallback</p><span class="mod">data/catalog · scripts/</span></div>
+  <div class="stage" data-k="llm"><div class="num">LLM</div><h3>Model layer</h3><p>Retry/backoff client, code verifies numbers</p><span class="mod">lib/gemini.ts</span></div>
+  <div class="stage" data-k="auth"><div class="num">ID</div><h3>Identity + mail</h3><p>OAuth 2.0, encrypted cookies, Gmail scopes</p><span class="mod">api/auth</span></div>
+  <div class="stage" data-k="db"><div class="num">DB</div><h3>Persistence</h3><p>Prisma + SQLite, autosave, cache</p><span class="mod">prisma/ · lib/db.ts</span></div>
+  <div class="stage" data-k="docs"><div class="num">DOC</div><h3>Attachments</h3><p>PDF, Excel, CSV with tables preserved</p><span class="mod">attachmentParse.ts</span></div>
+</div></div>
+<div class="strips">
+  <div class="strip"><h3>The engineer's whole job</h3><ul><li>Pick the email, or paste the RFQ.</li><li>Confirm the extracted lines.</li><li>Pick a brand, or let the model choose across 54.</li><li>Read the comparison, edit the draft, press send.</li></ul></div>
+  <div class="strip"><h3>Stack</h3><div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Tailwind 4</span><span class="chip">Prisma</span><span class="chip">SQLite</span><span class="chip">Google OAuth 2.0</span><span class="chip">Gmail API</span><span class="chip">LLM API</span><span class="chip">pdf-parse</span><span class="chip">xlsx</span><span class="chip">zod</span></div></div>
+</div>
+</div>
+<aside class="panel" id="panel"><h2>FAE Platform</h2><div class="role">Click any box on the left.</div><h4>What this is</h4>
+<ul><li>A five-step wizard that turns a customer RFQ email into a reviewed technical proposal.</li><li>Pre-built catalogs for 54 brands make matching fast and deterministic; the model does the ranking and the writing.</li><li>Everything runs on the engineer's own Google account through OAuth, so sending is from their mailbox.</li></ul></aside>
+</div><footer>FAE Platform · static hero image: docs/architecture.png · source: docs/architecture-static.html</footer></main>
+<script>
+const D={
+intake:{t:"Email intake",r:"Get the RFQ in, whatever shape it arrived in",m:"src/app/api/gmail/\nsrc/lib/attachmentParse.ts",p:["Google OAuth sign-in; Gmail fetched by date range or search, paginated up to 1,000 messages.","HTML bodies parsed to readable text with tables, lists and quoted threads preserved.","PDF, Excel and CSV attachments downloaded and parsed alongside the body.","A raw email or RFQ can be pasted directly to skip the mailbox."]},
+extract:{t:"Requirement extraction",r:"Two passes, because one misses things",m:"src/app/api/extract/",p:["Pass 1 extracts every distinct requirement: MPN, specs, quantity, price, delivery, application context. Handles BOMs of 50+ lines.","Pass 2 is a self-audit: a second call checks the first for missed specs, misread numbers and incomplete rows.","Eleven-plus input formats: pipe tables, markdown, CSV, key-value, bullets, datasheets, Excel BOMs, threads, shorthand.","Output is structured JSON with customer info and an array of requirement items."]},
+match:{t:"Product matching",r:"Catalog first, model second",m:"src/app/api/products/\nsrc/lib/catalogStore.ts · dealers.ts",p:["Brand-locked mode searches one brand's catalog. AI mode scores keywords to pick brands from the 54-brand portfolio, then searches across them.","Pre-built JSON catalogs are the primary source: fast, deterministic, no live fetch. Live dealer pages are the fallback.","Tiered matching: MPN_EXACT › MPN_XREF › BRAND_LOCKED › SPECS › NO_MATCH. Up to five ranked candidates with a 0–100 score and per-spec compliance flags.","Results cached by a SHA-1 of the inputs so repeat requests cost nothing."]},
+compare:{t:"Compare + draft",r:"Spec against spec, then the email",m:"src/app/api/compare/\nsrc/app/api/draft/",p:["A parametric comparison table in the style of a distributor's product page, with rows chosen by category: MOSFETs get Rds(on), Vds and Qg; MCUs get Flash, RAM and clock; relays get contact rating and coil voltage.","Each row is verdicted MEETS, EXCEEDS, GAP, CLOSE, COMPATIBLE or APP-SAFE. Overall match score and total cost saving are computed in code.","The proposal email carries the table, numbered technical advantages, commercial terms (price, MOQ, warranty), a cost-optimisation note and an offer of evaluation samples."]},
+send:{t:"Review + send",r:"The engineer has the last word",m:"src/app/api/gmail/send/\nsrc/lib/persistProgress.ts",p:["The engineer edits the draft in place, then sends through the Gmail API on the same OAuth session.","The request is saved with status, timestamps and every intermediate artefact.","Wizard state autosaves, so an interrupted workflow resumes from the last step."]},
+catalog:{t:"Catalog engine",r:"The deterministic half of the system",m:"data/catalog/ · src/lib/catalogBuild.ts · dealerFetch.ts\nscripts/fetch-all-brands · enrich-catalog · retry-empty · rebuild-index",p:["59 JSON catalogs, one per brand plus an index, built from dealer sites.","Scripts fetch every brand, enrich entries, retry brands that came back empty, and rebuild the index.","Refresh from the CLI or an API endpoint; a live fetcher covers any brand without a catalog."]},
+llm:{t:"Model layer",r:"Reasoning with retries, numbers checked in code",m:"src/lib/gemini.ts",p:["One client with retry and exponential backoff for every model call.","Prompts for extraction, self-audit, matching, comparison and drafting.","Scores, savings and verdict aggregates are computed in code from the model's structured output."]},
+auth:{t:"Identity + mail",r:"The engineer's own Google account",m:"src/app/api/auth/ · src/app/api/gmail/",p:["Google OAuth 2.0 with Gmail read and send scopes.","Tokens are stored in encrypted HTTP-only cookies and refreshed server-side on expiry.","Sign-out clears the cookie; nothing is kept in browser storage."]},
+db:{t:"Persistence",r:"Every step, every request",m:"prisma/schema.prisma · src/lib/db.ts · store.ts",p:["Prisma over SQLite. Requests, history and intermediate data with status tracking.","Wizard state managed with a reducer and autosaved to the database.","Match results cached by content hash."]},
+docs:{t:"Attachment parsing",r:"Datasheets and BOMs become text",m:"src/lib/attachmentParse.ts · pdf-parse · pdfjs · xlsx",p:["PDF datasheets, Excel BOMs and CSV files parsed to text with tables preserved.","Fed into extraction alongside the email body so a BOM attachment is treated the same as an inline list."]}
+};
+const panel=document.getElementById('panel');
+document.querySelectorAll('.stage').forEach(s=>s.addEventListener('click',()=>{document.querySelectorAll('.stage').forEach(x=>x.classList.remove('active'));s.classList.add('active');const d=D[s.dataset.k];if(!d)return;panel.innerHTML=`<h2>${d.t}</h2><div class="role">${d.r}</div><div class="mods">${d.m}</div><h4>How it works</h4><ul>${d.p.map(x=>`<li>${x}</li>`).join('')}</ul>`;if(window.innerWidth<1100)panel.scrollIntoView({behavior:'smooth',block:'start'});}));
+</script>
+</body></html>

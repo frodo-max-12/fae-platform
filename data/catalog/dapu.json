@@ -1,0 +1,417 @@
+{
+  "brand": "Dapu",
+  "website": "https://www.dptel.com",
+  "lastFetched": "2026-04-17T05:13:42.191Z",
+  "sourceUrls": [
+    "https://www.dptel.com",
+    "https://www.dptel.com/products/"
+  ],
+  "products": [
+    {
+      "mpn": "RTC-INS5A8800",
+      "series": "INS5A",
+      "category": "RTC",
+      "keySpec": "Real-time Clock with I²C interface",
+      "package": "QFN16",
+      "tempRange": "-40°C to +85°C",
+      "output": "I²C",
+      "voltage": "1.8V to 3.3V",
+      "notes": "Low power RTC with oscillator",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1915",
+      "specs": {
+        "interface": "I²C",
+        "accuracy": "±5ppm",
+        "powerConsumption": "<10µA",
+        "frequencyOutput": "32.768kHz"
+      }
+    },
+    {
+      "mpn": "RTC-INS5A8801",
+      "series": "INS5A",
+      "category": "RTC",
+      "keySpec": "Real-time Clock with backup battery support",
+      "package": "QFN16",
+      "tempRange": "-40°C to +85°C",
+      "output": "I²C",
+      "voltage": "1.8V to 3.3V",
+      "notes": "Backup power with battery charging circuit",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1915",
+      "specs": {
+        "interface": "I²C",
+        "accuracy": "±5ppm",
+        "backupTime": "24 hours",
+        "frequencyOutput": "32.768kHz"
+      }
+    },
+    {
+      "mpn": "RTC-INS5A8803",
+      "series": "INS5A",
+      "category": "RTC",
+      "keySpec": "Real-time Clock with multiple frequency outputs",
+      "package": "QFN16",
+      "tempRange": "-40°C to +85°C",
+      "output": "I²C",
+      "voltage": "1.8V to 3.3V",
+      "notes": "Programmable frequency outputs",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1915",
+      "specs": {
+        "interface": "I²C",
+        "accuracy": "±5ppm",
+        "frequencyOutput": "1Hz, 4.096kHz, 8.192kHz, 32.768kHz"
+      }
+    },
+    {
+      "mpn": "RTC-INS5A8804",
+      "series": "INS5A",
+      "category": "RTC",
+      "keySpec": "High precision RTC with 24-bit timer and AEC-Q100",
+      "package": "QFN16",
+      "tempRange": "-40°C to +85°C",
+      "output": "I²C",
+      "voltage": "1.8V to 3.3V",
+      "notes": "Automotive qualified, external event recording, multiple frequency outputs",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel4/2989",
+      "specs": {
+        "interface": "I²C",
+        "timerBits": "24",
+        "accuracy": "±5ppm",
+        "powerConsumption": "<10µA",
+        "externalEventInput": "Yes",
+        "aeqQ100": true
+      }
+    },
+    {
+      "mpn": "RTC-INS5A8900",
+      "series": "INS5A",
+      "category": "RTC",
+      "keySpec": "Low power RTC with backup power and AEC-Q100",
+      "package": "QFN16",
+      "tempRange": "-40°C to +85°C",
+      "output": "I²C",
+      "voltage": "1.8V to 3.3V",
+      "notes": "Automotive qualified, 24-bit timer, multiple frequency outputs, backup battery support",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel4/2988",
+      "specs": {
+        "interface": "I²C",
+        "timerBits": "24",
+        "accuracy": "±5ppm",
+        "backupPower": "Yes",
+        "aeqQ100": true
+      }
+    },
+    {
+      "mpn": "RTC-INS5A8901",
+      "series": "INS5A",
+      "category": "RTC",
+      "keySpec": "Real-time Clock with temperature compensation",
+      "package": "QFN16",
+      "tempRange": "-40°C to +85°C",
+      "output": "I²C",
+      "voltage": "1.8V to 3.3V",
+      "notes": "Temperature compensated crystal oscillator",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1915",
+      "specs": {
+        "interface": "I²C",
+        "accuracy": "±2ppm",
+        "tempCompensation": true
+      }
+    },
+    {
+      "mpn": "DP83848I",
+      "series": "DP83848",
+      "category": "Ethernet PHY",
+      "keySpec": "10/100M Ethernet PHY Industrial",
+      "package": "QFP48",
+      "tempRange": "-40°C to +85°C",
+      "output": "MII/RMII",
+      "voltage": "3.3V",
+      "notes": "Industrial temperature range, supports MII and RMII modes",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "10/100Mbps",
+        "interface": "MII/RMII",
+        "ledOutputs": "4",
+        "powerSupply": "3.3V"
+      }
+    },
+    {
+      "mpn": "DP83848C",
+      "series": "DP83848",
+      "category": "Ethernet PHY",
+      "keySpec": "10/100M Ethernet PHY Commercial",
+      "package": "QFP48",
+      "tempRange": "0°C to +70°C",
+      "output": "MII/RMII",
+      "voltage": "3.3V",
+      "notes": "Commercial temperature range, MII/RMII compatible",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "10/100Mbps",
+        "interface": "MII/RMII",
+        "ledOutputs": "4"
+      }
+    },
+    {
+      "mpn": "DP83848CV",
+      "series": "DP83848",
+      "category": "Ethernet PHY",
+      "keySpec": "10/100M Ethernet PHY with VBAT",
+      "package": "QFP48",
+      "tempRange": "0°C to +70°C",
+      "output": "MII/RMII",
+      "voltage": "3.3V",
+      "notes": "Reduced power consumption variant",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "10/100Mbps",
+        "interface": "MII/RMII",
+        "powerConsumption": "Reduced"
+      }
+    },
+    {
+      "mpn": "DP83848H",
+      "series": "DP83848",
+      "category": "Ethernet PHY",
+      "keySpec": "10/100M Ethernet PHY with extended features",
+      "package": "QFP48",
+      "tempRange": "-40°C to +85°C",
+      "output": "MII/RMII",
+      "voltage": "3.3V",
+      "notes": "Extended temperature, integrated RMII termination",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "10/100Mbps",
+        "interface": "MII/RMII",
+        "rmiTermination": true
+      }
+    },
+    {
+      "mpn": "DP83869HM",
+      "series": "DP83869",
+      "category": "Ethernet PHY",
+      "keySpec": "Gigabit Ethernet PHY with EMI reduction",
+      "package": "QFP48",
+      "tempRange": "-40°C to +85°C",
+      "output": "RGMII",
+      "voltage": "1.8V/3.3V",
+      "notes": "1Gbps capable, enhanced EMI control",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "1Gbps",
+        "interface": "RGMII",
+        "emiControl": true,
+        "powerSupply": "1.8V/3.3V"
+      }
+    },
+    {
+      "mpn": "DP83869HR",
+      "series": "DP83869",
+      "category": "Ethernet PHY",
+      "keySpec": "Gigabit Ethernet PHY automotive qualified",
+      "package": "QFP48",
+      "tempRange": "-40°C to +125°C",
+      "output": "RGMII",
+      "voltage": "1.8V/3.3V",
+      "notes": "Extended temperature range for automotive applications",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "1Gbps",
+        "interface": "RGMII",
+        "automotiveGrade": true
+      }
+    },
+    {
+      "mpn": "DP8110A",
+      "series": "DP8110",
+      "category": "Ethernet PHY",
+      "keySpec": "10/100M Ethernet PHY standard",
+      "package": "LQFP48",
+      "tempRange": "-40°C to +85°C",
+      "output": "MII",
+      "voltage": "3.3V",
+      "notes": "Legacy PHY with MII interface",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "10/100Mbps",
+        "interface": "MII",
+        "features": "Auto-negotiation"
+      }
+    },
+    {
+      "mpn": "DP8110C",
+      "series": "DP8110",
+      "category": "Ethernet PHY",
+      "keySpec": "10/100M Ethernet PHY commercial",
+      "package": "LQFP48",
+      "tempRange": "0°C to +70°C",
+      "output": "MII",
+      "voltage": "3.3V",
+      "notes": "Commercial temperature range",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "10/100Mbps",
+        "interface": "MII"
+      }
+    },
+    {
+      "mpn": "DP8110D",
+      "series": "DP8110",
+      "category": "Ethernet PHY",
+      "keySpec": "10/100M Ethernet PHY with diagnostics",
+      "package": "LQFP48",
+      "tempRange": "-40°C to +85°C",
+      "output": "MII",
+      "voltage": "3.3V",
+      "notes": "Built-in diagnostics and cable testing",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1938",
+      "specs": {
+        "dataRate": "10/100Mbps",
+        "interface": "MII",
+        "diagnostics": true
+      }
+    },
+    {
+      "mpn": "INS6310A",
+      "series": "INS6310",
+      "category": "Crystal Oscillator",
+      "keySpec": "Low jitter clock buffer with 10 differential outputs",
+      "package": "QFP64",
+      "tempRange": "-40°C to +85°C",
+      "output": "LVPECL/LVDS/HCSL",
+      "voltage": "3.3V",
+      "notes": "Multiple input support (differential, single-ended, crystal), 3:10 fanout architecture",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel4/2987",
+      "specs": {
+        "jitter": "<40fs (max)",
+        "outputs": "10 differential + 1 LVCMOS",
+        "inputTypes": "Differential/Single-ended/Crystal",
+        "levelConversion": true,
+        "outputFormats": "LVPECL, LVDS, HCSL",
+        "packageSize": "7x7mm"
+      }
+    },
+    {
+      "mpn": "INS6311A",
+      "series": "INS6310",
+      "category": "Crystal Oscillator",
+      "keySpec": "Low jitter clock buffer with 8 outputs",
+      "package": "QFP56",
+      "tempRange": "-40°C to +85°C",
+      "output": "LVPECL/LVDS/HCSL",
+      "voltage": "3.3V",
+      "notes": "Reduced pin count variant, 2:8 fanout",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1914",
+      "specs": {
+        "jitter": "<40fs (max)",
+        "outputs": "8 differential",
+        "levelConversion": true
+      }
+    },
+    {
+      "mpn": "INS6312A",
+      "series": "INS6310",
+      "category": "Crystal Oscillator",
+      "keySpec": "Low jitter clock buffer with 4 outputs",
+      "package": "QFN32",
+      "tempRange": "-40°C to +85°C",
+      "output": "LVPECL/LVDS",
+      "voltage": "3.3V",
+      "notes": "Compact 1:4 fanout design",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1914",
+      "specs": {
+        "jitter": "<45fs (max)",
+        "outputs": "4 differential",
+        "packageSize": "5x5mm"
+      }
+    },
+    {
+      "mpn": "DPO-100M",
+      "series": "DPO",
+      "category": "Crystal Oscillator",
+      "keySpec": "100MHz LVPECL Crystal Oscillator",
+      "package": "DIP14",
+      "tempRange": "-40°C to +85°C",
+      "output": "LVPECL",
+      "voltage": "3.3V",
+      "notes": "Standard frequency, low power",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel2/1",
+      "specs": {
+        "frequency": "100MHz",
+        "outputType": "LVPECL",
+        "jitter": "<1ps"
+      }
+    },
+    {
+      "mpn": "DPO-125M",
+      "series": "DPO",
+      "category": "Crystal Oscillator",
+      "keySpec": "125MHz LVDS Crystal Oscillator",
+      "package": "DIP14",
+      "tempRange": "-40°C to +85°C",
+      "output": "LVDS",
+      "voltage": "3.3V",
+      "notes": "Common frequency for networking applications",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel2/1",
+      "specs": {
+        "frequency": "125MHz",
+        "outputType": "LVDS",
+        "jitter": "<1ps"
+      }
+    },
+    {
+      "mpn": "DPO-156.25M",
+      "series": "DPO",
+      "category": "Crystal Oscillator",
+      "keySpec": "156.25MHz differential clock oscillator",
+      "package": "DIP14",
+      "tempRange": "-40°C to +105°C",
+      "output": "LVPECL/LVDS/HCSL",
+      "voltage": "3.3V",
+      "notes": "Industry smallest differential package, 40fs jitter, excellent noise suppression",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel4/2994",
+      "specs": {
+        "frequency": "156.25MHz",
+        "jitter": "40fs (max)",
+        "outputFormats": "LVPECL, LVDS, HCSL",
+        "packageSize": "2.0 x 1.6mm",
+        "noiseSuppressionPower": "Excellent",
+        "environmentalInterference": "High rejection"
+      }
+    },
+    {
+      "mpn": "DPO-200M",
+      "series": "DPO",
+      "category": "Crystal Oscillator",
+      "keySpec": "200MHz HCSL Crystal Oscillator",
+      "package": "DIP14",
+      "tempRange": "-40°C to +85°C",
+      "output": "HCSL",
+      "voltage": "3.3V",
+      "notes": "High frequency clock source",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel2/1",
+      "specs": {
+        "frequency": "200MHz",
+        "outputType": "HCSL",
+        "jitter": "<0.8ps"
+      }
+    },
+    {
+      "mpn": "DP-RTC-DS1307",
+      "series": "DP-RTC Legacy",
+      "category": "RTC",
+      "keySpec": "Real-time Clock with battery backup",
+      "package": "DIP8",
+      "tempRange": "-40°C to +85°C",
+      "output": "I²C",
+      "voltage": "5V",
+      "notes": "Legacy RTC compatible, low power with CR2032 battery backup",
+      "sourceUrl": "https://www.dptel.com/Products/ProductLevel3/1915",
+      "specs": {
+        "interface": "I²C",
+        "batteryBackup": "Yes",
+        "accuracy": "±5ppm",
+        "addressable": "64 bytes SRAM"
+      }
+    }
+  ]
+}

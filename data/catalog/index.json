@@ -1,0 +1,326 @@
+{
+  "Standex Electronics": {
+    "file": "data/catalog/standex-electronics.json",
+    "lastFetched": "2026-04-16T05:50:43.119Z",
+    "productCount": 0,
+    "website": "https://standexelectronics.com/"
+  },
+  "GigaDevice": {
+    "file": "data/catalog/gigadevice.json",
+    "lastFetched": "2026-04-16T05:50:54.956Z",
+    "productCount": 0,
+    "website": "https://www.gigadevice.com/"
+  },
+  "Schurter": {
+    "file": "data/catalog/schurter.json",
+    "lastFetched": "2026-04-16T05:33:51.467Z",
+    "productCount": 0,
+    "website": "https://www.schurter.com/en/products-and-solutions/catalog"
+  },
+  "SETfuse": {
+    "file": "data/catalog/setfuse.json",
+    "lastFetched": "2026-04-16T05:35:17.785Z",
+    "productCount": 0,
+    "website": "https://www.setfuse.com/"
+  },
+  "Nanjing Electric": {
+    "file": "data/catalog/nanjing-electric.json",
+    "lastFetched": "2026-04-16T05:35:25.333Z",
+    "productCount": 0,
+    "website": "https://www.ntcshiheng.com"
+  },
+  "Intelligent Memory": {
+    "file": "data/catalog/intelligent-memory.json",
+    "lastFetched": "2026-04-16T05:51:55.468Z",
+    "productCount": 0,
+    "website": "https://www.intelligentmemory.com/"
+  },
+  "Fudan Micro": {
+    "file": "data/catalog/fudan-micro.json",
+    "lastFetched": "2026-04-16T05:52:47.757Z",
+    "productCount": 0,
+    "website": "https://www.fm-chips.com/"
+  },
+  "Cooltron": {
+    "file": "data/catalog/cooltron.json",
+    "lastFetched": "2026-04-16T05:35:40.123Z",
+    "productCount": 0,
+    "website": "https://www.cooltron.com"
+  },
+  "MEGA": {
+    "file": "data/catalog/mega.json",
+    "lastFetched": "2026-04-16T05:35:59.549Z",
+    "productCount": 0,
+    "website": "https://cnmegatech.com"
+  },
+  "CDIL": {
+    "file": "data/catalog/cdil.json",
+    "lastFetched": "2026-04-16T05:36:11.827Z",
+    "productCount": 0,
+    "website": "https://www.cdil.com"
+  },
+  "Rectron": {
+    "file": "data/catalog/rectron.json",
+    "lastFetched": "2026-04-16T05:36:18.106Z",
+    "productCount": 0,
+    "website": "https://www.rectron.com/"
+  },
+  "Netsol": {
+    "file": "data/catalog/netsol.json",
+    "lastFetched": "2026-04-16T05:53:41.992Z",
+    "productCount": 0,
+    "website": "http://www.netsol.co.kr"
+  },
+  "Diotec": {
+    "file": "data/catalog/diotec.json",
+    "lastFetched": "2026-04-16T05:51:46.680Z",
+    "productCount": 0,
+    "website": "https://diotec.com/en/home.htm"
+  },
+  "SMC Diode Solutions": {
+    "file": "data/catalog/smc-diode-solutions.json",
+    "lastFetched": "2026-04-16T05:51:58.274Z",
+    "productCount": 0,
+    "website": "https://www.smc-diodes.com/"
+  },
+  "Megawin": {
+    "file": "data/catalog/megawin.json",
+    "lastFetched": "2026-04-16T05:53:44.069Z",
+    "productCount": 0,
+    "website": "https://www.megawin.com"
+  },
+  "Weltrend": {
+    "file": "data/catalog/weltrend.json",
+    "lastFetched": "2026-04-16T05:54:39.080Z",
+    "productCount": 0,
+    "website": "http://www.weltrend.com"
+  },
+  "Goford Semiconductor": {
+    "file": "data/catalog/goford-semiconductor.json",
+    "lastFetched": "2026-04-16T05:38:01.106Z",
+    "productCount": 0,
+    "website": "http://gofordsemi.com/"
+  },
+  "Degson": {
+    "file": "data/catalog/degson.json",
+    "lastFetched": "2026-04-16T05:43:37.476Z",
+    "productCount": 0,
+    "website": "https://www.degson.com"
+  },
+  "NexGen Power": {
+    "file": "data/catalog/nexgen-power.json",
+    "lastFetched": "2026-04-16T05:38:57.417Z",
+    "productCount": 0,
+    "website": "https://www.nexgenpowersystems.com/"
+  },
+  "CXW": {
+    "file": "data/catalog/cxw.json",
+    "lastFetched": "2026-04-16T05:54:48.257Z",
+    "productCount": 0,
+    "website": "https://www.cxwic.net/"
+  },
+  "HY Group": {
+    "file": "data/catalog/hy-group.json",
+    "lastFetched": "2026-04-16T05:39:12.198Z",
+    "productCount": 0,
+    "website": "https://www.hygroup.com.tw/"
+  },
+  "UTC Unisonic": {
+    "file": "data/catalog/utc-unisonic.json",
+    "lastFetched": "2026-04-16T05:39:17.869Z",
+    "productCount": 0,
+    "website": "https://en.unisonic.com.tw/"
+  },
+  "Silergy": {
+    "file": "data/catalog/silergy.json",
+    "lastFetched": "2026-04-16T05:55:34.565Z",
+    "productCount": 0,
+    "website": "https://www.silergy.com/"
+  },
+  "Clafpower": {
+    "file": "data/catalog/clafpower.json",
+    "lastFetched": "2026-04-16T05:55:38.631Z",
+    "productCount": 0,
+    "website": "https://www.clafpower.com"
+  },
+  "Knitter-Switch": {
+    "file": "data/catalog/knitter-switch.json",
+    "lastFetched": "2026-04-16T05:40:30.849Z",
+    "productCount": 0,
+    "website": "https://www.knitter-switch.com/eng"
+  },
+  "Diptronics": {
+    "file": "data/catalog/diptronics.json",
+    "lastFetched": "2026-04-16T05:40:58.334Z",
+    "productCount": 0,
+    "website": "http://www.dip.com.tw/en/"
+  },
+  "Phoenix Contact": {
+    "file": "data/catalog/phoenix-contact.json",
+    "lastFetched": "2026-04-16T05:44:41.527Z",
+    "productCount": 0,
+    "website": "https://www.phoenixcontact.com"
+  },
+  "Zhejiang Jinja": {
+    "file": "data/catalog/zhejiang-jinja.json",
+    "lastFetched": "2026-04-16T05:41:29.419Z",
+    "productCount": 0,
+    "website": "http://www.jinjiaelc.com"
+  },
+  "Greenconn": {
+    "file": "data/catalog/greenconn.json",
+    "lastFetched": "2026-04-16T05:41:36.171Z",
+    "productCount": 0,
+    "website": "https://www.greenconn.com/"
+  },
+  "Anyconn": {
+    "file": "data/catalog/anyconn.json",
+    "lastFetched": "2026-04-16T05:41:49.591Z",
+    "productCount": 0,
+    "website": "https://www.anyconn.tw"
+  },
+  "Amphenol": {
+    "file": "data/catalog/amphenol.json",
+    "lastFetched": "2026-04-16T05:42:02.827Z",
+    "productCount": 0,
+    "website": "https://www.amphenol-in.com"
+  },
+  "SGMicro": {
+    "file": "data/catalog/sgmicro.json",
+    "lastFetched": "2026-04-16T05:57:36.475Z",
+    "productCount": 0,
+    "website": "https://www.sg-micro.com"
+  },
+  "Antenk": {
+    "file": "data/catalog/antenk.json",
+    "lastFetched": "2026-04-16T05:45:37.849Z",
+    "productCount": 0,
+    "website": "https://www.antenk.com"
+  },
+  "KLS Electronic": {
+    "file": "data/catalog/kls-electronic.json",
+    "lastFetched": "2026-04-16T05:46:06.586Z",
+    "productCount": 0,
+    "website": "https://www.klsele.com"
+  },
+  "TE Connectivity": {
+    "file": "data/catalog/te-connectivity.json",
+    "lastFetched": "2026-04-17T05:18:55.062Z",
+    "productCount": 1,
+    "website": "https://www.te.com/en/home.html"
+  },
+  "Ze Ming Lang Xi": {
+    "file": "data/catalog/ze-ming-lang-xi.json",
+    "lastFetched": "2026-04-17T05:19:17.427Z",
+    "productCount": 0,
+    "website": "https://www.micro-transformer.com/"
+  },
+  "3L Coils": {
+    "file": "data/catalog/3l-coils.json",
+    "lastFetched": "2026-04-17T05:19:18.992Z",
+    "productCount": 0,
+    "website": "https://www.3lcoils.com"
+  },
+  "Coilmaster": {
+    "file": "data/catalog/coilmaster.json",
+    "lastFetched": "2026-04-17T05:19:30.541Z",
+    "productCount": 0,
+    "website": "https://www.coilmaster.com.tw"
+  },
+  "Jackcon": {
+    "file": "data/catalog/jackcon.json",
+    "lastFetched": "2026-04-17T05:19:35.547Z",
+    "productCount": 0,
+    "website": "https://www.jackcon.com.tw/"
+  },
+  "Novosens": {
+    "file": "data/catalog/novosens.json",
+    "lastFetched": "2026-04-16T05:45:51.958Z",
+    "productCount": 0,
+    "website": "https://www.novosns.com/"
+  },
+  "PSA": {
+    "file": "data/catalog/psa.json",
+    "lastFetched": "2026-04-16T05:48:35.886Z",
+    "productCount": 0,
+    "website": "http://www.pdc.com.tw/"
+  },
+  "Hokuriku": {
+    "file": "data/catalog/hokuriku.json",
+    "lastFetched": "2026-04-16T05:48:43.280Z",
+    "productCount": 0,
+    "website": "https://www.hdk.co.jp/english/index_e.htm"
+  },
+  "TDK (Micronas)": {
+    "file": "data/catalog/tdk-micronas.json",
+    "lastFetched": "2026-04-16T05:45:53.697Z",
+    "productCount": 0,
+    "website": "https://www.micronas.tdk.com"
+  },
+  "Song Chuan": {
+    "file": "data/catalog/song-chuan.json",
+    "lastFetched": "2026-04-16T05:49:24.398Z",
+    "productCount": 0,
+    "website": "https://songchuanusa.com/"
+  },
+  "Taimi": {
+    "file": "data/catalog/taimi.json",
+    "lastFetched": "2026-04-16T05:46:36.098Z",
+    "productCount": 0,
+    "website": "https://www.uttransducer.com"
+  },
+  "Indie Semiconductor": {
+    "file": "data/catalog/indie-semiconductor.json",
+    "lastFetched": "2026-04-16T05:51:03.993Z",
+    "productCount": 0,
+    "website": "https://www.indiesemi.com"
+  },
+  "Socle Technology": {
+    "file": "data/catalog/socle-technology.json",
+    "lastFetched": "2026-04-16T05:51:04.956Z",
+    "productCount": 0,
+    "website": "https://www.socle-tech.com"
+  },
+  "Sonytek": {
+    "file": "data/catalog/sonytek.json",
+    "lastFetched": "2026-04-16T13:55:08.968Z",
+    "productCount": 27,
+    "website": "https://www.sonytek.com"
+  },
+  "DWIN": {
+    "file": "data/catalog/dwin.json",
+    "lastFetched": "2026-04-16T05:51:06.856Z",
+    "productCount": 0,
+    "website": "https://www.dwin-global.com/"
+  },
+  "Hongfa": {
+    "file": "data/catalog/hongfa.json",
+    "lastFetched": "2026-04-16T05:50:35.907Z",
+    "productCount": 0,
+    "website": "https://www.hongfa.com/"
+  },
+  "Kingstate": {
+    "file": "data/catalog/kingstate.json",
+    "lastFetched": "2026-04-17T05:11:13.291Z",
+    "productCount": 0,
+    "website": "https://www.kingstate.com.tw"
+  },
+  "Seoul Semiconductor": {
+    "file": "data/catalog/seoul-semiconductor.json",
+    "lastFetched": "2026-04-16T05:51:08.875Z",
+    "productCount": 0,
+    "website": "https://www.seoulsemicon.com"
+  },
+  "Dapu": {
+    "file": "data/catalog/dapu.json",
+    "lastFetched": "2026-04-17T05:13:42.191Z",
+    "productCount": 23,
+    "website": "https://www.dptel.com"
+  },
+  "Arduino": {
+    "file": "data/catalog/arduino.json",
+    "lastFetched": "2026-04-17T05:15:19.494Z",
+    "productCount": 0,
+    "website": "https://www.arduino.cc"
+  }
+}

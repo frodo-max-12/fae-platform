@@ -1,0 +1,52 @@
+{
+  "brand": "TE Connectivity",
+  "website": "https://www.te.com/en/home.html",
+  "lastFetched": "2026-04-17T05:18:55.062Z",
+  "sourceUrls": [
+    "https://www.te.com/en/home.html",
+    "https://www.te.com/en/home.html/catalog",
+    "https://www.te.com/en/home.html/all-products",
+    "https://www.te.com/en/commerce/shop/search-order.html",
+    "https://www.te.com/en/commerce/shop-auth-generic/recently-purchased-items.html",
+    "https://www.te.com/en/products/antennas.html",
+    "https://www.te.com/en/products/antennas/antennas-for-bluetooth-devices.html",
+    "https://www.te.com/en/products/antennas/cellular-antennas.html",
+    "https://www.te.com/en/products/antennas/gnss-and-gps-antennas.html",
+    "https://www.te.com/en/products/antennas/ism-lpwan-and-lorawan-antennas.html",
+    "https://www.te.com/en/products/antennas/outdoor-antennas.html",
+    "https://www.te.com/en/products/antennas/public-safety-antennas.html"
+  ],
+  "products": [
+    {
+      "mpn": "XYZ-01",
+      "series": "Schottky Diode",
+      "category": "Diode",
+      "keySpec": "Vf: 100",
+      "package": "SMD",
+      "tempRange": "25°C",
+      "output": "10mA",
+      "voltage": "2V",
+      "notes": "Low forward voltage, high reverse leakage",
+      "sourceUrl": "https://example.com/schottky-diode-xyz-01",
+      "specs": {
+        "Vf": "100",
+        "If": "100",
+        "Vrrm": "100",
+        "Vceo": "100",
+        "Vce(sat)": "100",
+        "Vds": "100",
+        "Vgs(th)": "10",
+        "Id": "10",
+        "Rds(on)": "10",
+        "Pd": "10",
+        "tr": "10",
+        "tf": "10",
+        "Qg": "10",
+        "Coss": "10",
+        "Crss": "10",
+        "reverse recovery": "10",
+        "thermal resistance": "10"
+      }
+    }
+  ]
+}

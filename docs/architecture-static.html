@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Source for docs/architecture.png (the README hero image).
+     Regenerate after edits:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new \
+       --disable-gpu --hide-scrollbars --force-device-scale-factor=2 \
+       --window-size=1600,1300 --screenshot=docs/architecture.png \
+       "file://$(pwd)/docs/architecture-static.html" -->
+<head>
+<meta charset="utf-8">
+<title>FAE Platform — architecture (static)</title>
+<style>
+  :root {
+    --ink:#1e1b4b; --muted:#5b5f7a; --bg:#ffffff; --band:#312e81; --tint:#eef2ff; --tint2:#f5f3ff;
+    --indigo:#4338ca; --indigo-soft:#e0e7ff; --coral:#e11d48; --coral-soft:#ffe4e6; --mint:#0f766e;
+    --line:#e5e7f2; --card:#ffffff;
+  }
+  * { box-sizing:border-box; margin:0; }
+  html, body { width:1600px; background:var(--bg); }
+  body { font:15px/1.45 "Avenir Next","Helvetica Neue",Arial,sans-serif; color:var(--ink); padding:0 0 26px; }
+
+  .band { background:var(--band); color:#fff; padding:30px 46px 26px; display:flex; justify-content:space-between; align-items:flex-end; gap:36px; }
+  .band h1 { font-size:36px; font-weight:700; letter-spacing:-.01em; line-height:1; }
+  .band h1 span { color:#fda4af; }
+  .band .tag { font-size:16px; color:#c7d2fe; margin-top:10px; max-width:820px; }
+  .rule { background:#fff; color:var(--ink); border-radius:14px; padding:12px 16px; max-width:560px; font-size:14px;
+          box-shadow:0 6px 24px rgba(30,27,75,.25); }
+  .rule b { color:var(--coral); }
+
+  main { padding:22px 46px 0; }
+  .flowbar { display:flex; align-items:center; gap:10px; margin:0 0 20px; font-size:14px; color:var(--muted); }
+  .flowbar b { color:var(--indigo); background:var(--indigo-soft); padding:5px 12px; border-radius:20px; font-weight:600; }
+  .flowbar .chev { color:#a5b4fc; font-size:18px; }
+  .flowbar .right { margin-left:auto; font-size:13px; }
+
+  .lane { background:var(--tint); border-radius:18px; padding:18px 18px 16px; margin-bottom:14px; }
+  .lane.eng { background:var(--tint2); }
+  .lanehead { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+  .lanehead h2 { font-size:15px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--indigo); }
+  .lanehead .sub { font-size:13px; color:var(--muted); }
+  .row { display:flex; gap:12px; align-items:stretch; }
+  .stage { flex:1; background:var(--card); border-radius:14px; padding:14px 15px 12px; box-shadow:0 2px 10px rgba(49,46,129,.08); position:relative; }
+  .stage .num { width:30px; height:30px; border-radius:50%; border:2px solid var(--coral); color:var(--coral); font-weight:700; font-size:14px;
+                display:flex; align-items:center; justify-content:center; margin-bottom:8px; background:#fff; }
+  .lane.eng .stage .num { border-color:var(--mint); color:var(--mint); border-radius:8px; font-size:12px; }
+  .stage h3 { font-size:15.5px; font-weight:700; margin-bottom:4px; }
+  .stage p { font-size:12.4px; color:var(--muted); }
+  .stage .mod { display:block; font-family:"SF Mono",Menlo,ui-monospace,monospace; font-size:10.5px; color:var(--indigo); margin-top:8px; }
+  .chevron { align-self:center; color:#a5b4fc; font-size:28px; flex:0 0 auto; line-height:1; }
+
+  .strips { display:grid; grid-template-columns:1.2fr 1fr 1fr; gap:14px; margin-top:6px; }
+  .strip { border:1px solid var(--line); border-radius:14px; background:var(--card); padding:14px 18px 16px; }
+  .strip h3 { font-size:12px; text-transform:uppercase; letter-spacing:.09em; color:var(--muted); margin-bottom:9px; }
+  .strip li { font-size:13.5px; margin:6px 0 0 16px; } .strip li::marker { color:var(--coral); }
+  .nums { display:grid; grid-template-columns:repeat(4,1fr); gap:10px 8px; }
+  .nums b { display:block; font-size:28px; font-weight:800; color:var(--coral); line-height:1; }
+  .nums span { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+  .chips { display:flex; flex-wrap:wrap; gap:6px; }
+  .chip { font-size:12px; padding:4px 10px; border-radius:20px; background:var(--indigo-soft); color:var(--indigo); font-weight:600; }
+  .foot { text-align:center; color:var(--muted); font-size:12px; margin-top:16px; }
+</style>
+</head>
+<body>
+
+<div class="band">
+  <div>
+    <h1>FAE <span>Platform</span></h1>
+    <div class="tag">From a customer's RFQ email to a technical proposal in minutes — a five-step wizard for field application engineers, backed by pre-built catalogs for 54 brands.</div>
+  </div>
+  <div class="rule"><b>The catalog-first rule.</b> Pre-built JSON catalogs answer first, fast and deterministic. The LLM ranks and explains; the code verifies every spec. Live dealer sites are fetched only when a catalog is missing.</div>
+</div>
+
+<main>
+<div class="flowbar">
+  <b>Intake</b><span class="chev">›</span><b>Extract</b><span class="chev">›</span><b>Match</b><span class="chev">›</span><b>Compare</b><span class="chev">›</span><b>Send</b>
+  <span class="right">one email in, one proposal out</span>
+</div>
+
+<div class="lane">
+  <div class="lanehead"><h2>The wizard</h2><span class="sub">— what the engineer walks through</span></div>
+  <div class="row">
+    <div class="stage"><div class="num">1</div><h3>Email intake</h3>
+      <p>Sign in with Google OAuth · fetch from Gmail by date range or search, paginated to 1,000 · HTML parsed to text with tables and quoted threads intact · PDF, Excel and CSV attachments pulled in · or paste a raw RFQ</p>
+      <span class="mod">api/gmail · attachmentParse.ts</span></div>
+    <div class="chevron">›</div>
+    <div class="stage"><div class="num">2</div><h3>Requirement extraction</h3>
+      <p>Two passes: the first extracts every line item (MPN, specs, quantity, price, delivery, application) across 11+ input formats · the second audits the first for missed specs and misread numbers · structured JSON out</p>
+      <span class="mod">api/extract</span></div>
+    <div class="chevron">›</div>
+    <div class="stage"><div class="num">3</div><h3>Product matching</h3>
+      <p>Brand-locked or AI mode across 54 brands · catalog first · tiered MPN_EXACT › MPN_XREF › BRAND_LOCKED › SPECS › NO_MATCH · up to 5 ranked matches with a 0–100 score and per-spec compliance · SHA-1 cache</p>
+      <span class="mod">api/products · catalogStore.ts</span></div>
+    <div class="chevron">›</div>
+    <div class="stage"><div class="num">4</div><h3>Compare + draft</h3>
+      <p>Parametric table shaped by category — MOSFETs get Rds(on)/Vds/Qg, MCUs get Flash/RAM/Clock · six verdicts per row · overall score and cost saving · a proposal email with the table, advantages, terms and a samples offer</p>
+      <span class="mod">api/compare · api/draft</span></div>
+    <div class="chevron">›</div>
+    <div class="stage"><div class="num">5</div><h3>Review + send</h3>
+      <p>Engineer edits the draft · sent through the Gmail API on the same OAuth session · request saved with the full audit trail · interrupted workflows resume where they stopped</p>
+      <span class="mod">api/gmail/send · persistProgress.ts</span></div>
+  </div>
+</div>
+
+<div class="lane eng">
+  <div class="lanehead"><h2>Under the hood</h2><span class="sub">— what every step leans on</span></div>
+  <div class="row">
+    <div class="stage"><div class="num">CAT</div><h3>Catalog engine</h3>
+      <p>59 JSON catalogs built from dealer sites · fetch-all-brands, enrich, retry-empty and rebuild-index scripts · a live fetcher as fallback · refresh from the CLI or an API endpoint</p>
+      <span class="mod">data/catalog/ · scripts/ · catalogBuild.ts</span></div>
+    <div class="stage"><div class="num">LLM</div><h3>Model layer</h3>
+      <p>One client with retry and backoff · prompts for extraction, self-audit, matching, comparison and drafting · every numeric claim checked in code after the model answers</p>
+      <span class="mod">lib/gemini.ts · api/*</span></div>
+    <div class="stage"><div class="num">ID</div><h3>Identity + mail</h3>
+      <p>Google OAuth 2.0 · tokens kept in encrypted HTTP-only cookies, never in the browser · Gmail read and send scopes · expiry refresh on the server</p>
+      <span class="mod">api/auth · api/gmail</span></div>
+    <div class="stage"><div class="num">DB</div><h3>Persistence</h3>
+      <p>Prisma over SQLite · requests, history and every intermediate step · wizard state autosaved · match cache keyed by content hash</p>
+      <span class="mod">prisma/ · lib/db.ts · lib/store.ts</span></div>
+    <div class="stage"><div class="num">DOC</div><h3>Attachment parsing</h3>
+      <p>PDF datasheets, Excel BOMs and CSV parsed to text with tables preserved · fed into extraction alongside the email body</p>
+      <span class="mod">attachmentParse.ts · pdf-parse · xlsx</span></div>
+  </div>
+</div>
+
+<div class="strips">
+  <div class="strip"><h3>The engineer's whole job</h3>
+    <ul>
+      <li>Pick the email, or paste the RFQ.</li>
+      <li>Confirm the extracted lines look right.</li>
+      <li>Pick a brand, or let the model choose across 54.</li>
+      <li>Read the comparison, edit the draft, press send.</li>
+    </ul></div>
+  <div class="strip"><h3>By the numbers</h3>
+    <div class="nums">
+      <div><b>5</b><span>wizard steps</span></div><div><b>54</b><span>brands</span></div>
+      <div><b>59</b><span>catalogs</span></div><div><b>2</b><span>extraction passes</span></div>
+      <div><b>5</b><span>match tiers</span></div><div><b>6</b><span>spec verdicts</span></div>
+      <div><b>11+</b><span>input formats</span></div><div><b>1k</b><span>emails per fetch</span></div>
+    </div></div>
+  <div class="strip"><h3>Stack</h3>
+    <div class="chips">
+      <span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Prisma</span>
+      <span class="chip">SQLite</span><span class="chip">Google OAuth 2.0</span><span class="chip">Gmail API</span><span class="chip">LLM API</span>
+      <span class="chip">Tailwind 4</span><span class="chip">pdf-parse</span><span class="chip">xlsx</span><span class="chip">zod</span><span class="chip">framer-motion</span>
+    </div></div>
+</div>
+
+<div class="foot">FAE Platform · interactive version with step-level detail: docs/architecture.html</div>
+</main>
+</body>
+</html>

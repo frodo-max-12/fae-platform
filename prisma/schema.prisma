@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  name         String
+  googleTokens String?
+  requests     Request[]
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Product {
+  id         String @id @default(cuid())
+  company    String
+  model      String
+  series     String
+  sensing    String
+  ipRating   String
+  tempRange  String
+  output     String
+  voltage    String
+  price      Float
+  moq        Int
+  warranty   String
+  stock      Int
+  warehouse  String
+  advantages String
+
+  @@unique([company, model])
+}
+
+model Customer {
+  id       String    @id @default(cuid())
+  name     String
+  email    String
+  company  String
+  requests Request[]
+}
+
+model Request {
+  id             String    @id @default(cuid())
+  userId         String
+  user           User      @relation(fields: [userId], references: [id])
+  customerId     String?
+  customer       Customer? @relation(fields: [customerId], references: [id])
+  rawEmail       String
+  extractedSpecs String?
+  productId      String?
+  stockResult    String?
+  comparison     String?
+  emailDraft     String?
+  finalEmail     String?
+  status         String    @default("intake")
+  sentAt         DateTime?
+  totalTime      Int?
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+}
